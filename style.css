@@ -1,0 +1,794 @@
+/* =========================================
+   GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f5f1e8;
+
+    color: #29251f;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navbar {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 22px 7%;
+
+    background: rgba(245, 241, 232, 0.96);
+
+    border-bottom: 1px solid #d8d0c1;
+
+}
+
+
+.logo {
+
+    color: #29251f;
+
+    text-decoration: none;
+
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 30px;
+
+}
+
+
+.nav-links a {
+
+    color: #514a40;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+}
+
+
+.nav-links a:hover {
+
+    color: #7a3e35;
+
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+
+    min-height: 90vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 100px 12%;
+
+    border-bottom: 1px solid #d8d0c1;
+
+}
+
+
+.hero-content {
+
+    max-width: 900px;
+
+}
+
+
+.small-title {
+
+    color: #7a3e35;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero h1 {
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(50px, 7vw, 90px);
+
+    font-weight: normal;
+
+    line-height: 1.05;
+
+    max-width: 900px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.hero h1 span {
+
+    color: #7a3e35;
+
+    font-style: italic;
+
+}
+
+
+.hero-text {
+
+    max-width: 650px;
+
+    color: #665f55;
+
+    font-size: 18px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.primary-button,
+.secondary-button {
+
+    display: inline-block;
+
+    padding: 13px 24px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+}
+
+
+.primary-button {
+
+    background: #7a3e35;
+
+    color: white;
+
+}
+
+
+.secondary-button {
+
+    border: 1px solid #7a3e35;
+
+    color: #7a3e35;
+
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.section {
+
+    padding: 110px 10%;
+
+    border-bottom: 1px solid #d8d0c1;
+
+}
+
+
+.section-heading {
+
+    max-width: 850px;
+
+    margin-bottom: 70px;
+
+}
+
+
+.section-number {
+
+    color: #7a3e35;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+
+}
+
+
+.section-heading h2 {
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(38px, 5vw, 62px);
+
+    line-height: 1.1;
+
+    font-weight: normal;
+
+}
+
+
+.section-heading h2 em {
+
+    color: #7a3e35;
+
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about-content {
+
+    max-width: 850px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+}
+
+
+.about-content p {
+
+    color: #665f55;
+
+    font-size: 17px;
+
+}
+
+
+/* =========================================
+   PROJECTS
+========================================= */
+
+.project-list {
+
+    border-top: 1px solid #cfc6b6;
+
+}
+
+
+.project {
+
+    display: grid;
+
+    grid-template-columns: 130px 1fr;
+
+    gap: 50px;
+
+    padding: 55px 0;
+
+    border-bottom: 1px solid #cfc6b6;
+
+}
+
+
+.project-number {
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+
+    color: #9a8f7e;
+
+}
+
+
+.project-info {
+
+    max-width: 850px;
+
+}
+
+
+.project-type {
+
+    color: #7a3e35;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+
+}
+
+
+.project h3 {
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 42px;
+
+    font-weight: normal;
+
+    margin-bottom: 15px;
+
+}
+
+
+.project-info > p:not(.project-type) {
+
+    color: #665f55;
+
+    max-width: 750px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.technology {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.technology span {
+
+    padding: 5px 10px;
+
+    border: 1px solid #cfc6b6;
+
+    color: #665f55;
+
+    font-size: 11px;
+
+}
+
+
+.project-link {
+
+    color: #7a3e35;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+.project-link:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =========================================
+   OTHER WORK
+========================================= */
+
+.other-work {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+
+}
+
+
+.other-work > div {
+
+    padding-top: 20px;
+
+    border-top: 2px solid #7a3e35;
+
+}
+
+
+.other-work h3 {
+
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+
+    font-weight: normal;
+
+    margin-bottom: 15px;
+
+}
+
+
+.other-work p {
+
+    color: #665f55;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   SKILLS
+========================================= */
+
+.skills {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid #cfc6b6;
+
+}
+
+
+.skills > div {
+
+    padding: 30px;
+
+    border-right: 1px solid #cfc6b6;
+
+    border-bottom: 1px solid #cfc6b6;
+
+}
+
+
+.skills h3 {
+
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+
+    font-weight: normal;
+
+    margin-bottom: 10px;
+
+}
+
+
+.skills p {
+
+    color: #665f55;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   EDUCATION
+========================================= */
+
+.timeline {
+
+    max-width: 850px;
+
+}
+
+
+.timeline-item {
+
+    display: grid;
+
+    grid-template-columns: 150px 1fr;
+
+    gap: 40px;
+
+    padding: 35px 0;
+
+    border-top: 1px solid #cfc6b6;
+
+}
+
+
+.timeline-item > span {
+
+    color: #7a3e35;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+}
+
+
+.timeline-item h3 {
+
+    font-family: Georgia, serif;
+
+    font-size: 28px;
+
+    font-weight: normal;
+
+    margin-bottom: 5px;
+
+}
+
+
+.timeline-item p {
+
+    color: #665f55;
+
+}
+
+
+.muted {
+
+    font-size: 13px;
+
+    margin-top: 8px;
+
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-section {
+
+    padding: 130px 10%;
+
+    text-align: center;
+
+    background: #2d2822;
+
+    color: #f5f1e8;
+
+}
+
+
+.contact-section h2 {
+
+    font-family: Georgia, serif;
+
+    font-weight: normal;
+
+    font-size: clamp(42px, 6vw, 75px);
+
+    line-height: 1.1;
+
+    max-width: 800px;
+
+    margin: 20px auto;
+
+}
+
+
+.contact-section h2 em {
+
+    color: #d6a49a;
+
+}
+
+
+.contact-section > p:not(.section-number) {
+
+    color: #c9c0b4;
+
+    margin-bottom: 30px;
+
+}
+
+
+.contact-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.contact-links a {
+
+    color: #f5f1e8;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #d6a49a;
+
+    padding-bottom: 5px;
+
+}
+
+
+.contact-links a:hover {
+
+    color: #d6a49a;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    background: #2d2822;
+
+    color: #938b80;
+
+    border-top: 1px solid #4a4239;
+
+    padding: 25px 10%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    .nav-links {
+
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+
+    .hero {
+
+        padding: 80px 7%;
+
+    }
+
+
+    .section {
+
+        padding: 80px 7%;
+
+    }
+
+
+    .about-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+
+    .project {
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+    }
+
+
+    .project h3 {
+
+        font-size: 35px;
+
+    }
+
+
+    .other-work {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .skills {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .timeline-item {
+
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+    }
+
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+    }
+
+}
